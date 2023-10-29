@@ -1,4 +1,3 @@
-package ru.mirea.digital_kotlin.teor_test.t16
 /*
 Для проверки корректности номера банковских карт используется алгоритм Луна. Реализуйте функцию расширения `isValidCCNumber(): Boolean` для класса `String` с использованием этого алгоритма. Все символы, не являющиеся цифрами (в т.ч. пробелы) игнорируются.
 
@@ -10,9 +9,10 @@ package ru.mirea.digital_kotlin.teor_test.t16
 Пример корректного номера карты: "4561 2612 1234 5467"
 */
 
+package ru.mirea.digital_kotlin.teor_test.t16
 
 fun main(args: Array<String>) {
-    val str = "23erdf32rer43tr2345465"
+    val str = "23erdf32r:er43tr 2345465"
     val str2 = "2365 3814 3042 4311"
     val str3 = "4561 2612 1234 5467"
     println(str.isValidCCNumber())
